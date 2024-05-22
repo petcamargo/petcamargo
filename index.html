@@ -1,0 +1,23 @@
+let teacher = {
+  name : "Christian",
+  city : "Frederiksberg",
+  vandkvalitet : 0
+  
+}
+
+
+
+function setup() {
+  createCanvas(400, 400);
+  teacher.pooplevel = 0;
+}
+
+function draw() {
+  background(220);
+  
+  text(teacher.vandkvalitet, 100, 100);
+  text(teacher.name, 100, 80);
+  teacher.vandkvalitet = teacher.vandkvalitet +1;
+  teacher.pooplevel += 1; 
+  // teacher.pooplevel = teacher.pooplevel +1;
+}
